@@ -1,0 +1,48 @@
+{
+  "name": "backend-template",
+  "scripts": {
+    "start": "cross-env ENV=dev umi dev",
+    "build": "cross-env ENV=prod umi build",
+    "build:dev": "cross-env ENV=dev umi build",
+    "build:test": "cross-env ENV=test umi build",
+    "build:perf": "cross-env ENV=perf umi build",
+    "build:analyze": "ANALYZE=1 cross-env ENV=dev umi build",
+    "lint": "eslint {src,mock,tests}/**/*.{ts,tsx} --fix",
+    "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "@ant-design/icons": "4.0.0",
+    "@umijs/preset-react": "^1.7.8",
+    "antd": "^4.9.4",
+    "axios": "^0.21.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "jsencrypt": "^3.0.0-rc.1",
+    "moment": "^2.29.1",
+    "qs": "^6.9.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "swr": "^0.5.6"
+  },
+  "devDependencies": {
+    "@types/moment": "^2.13.0",
+    "@types/react": "^16.7.18",
+    "@types/react-dom": "^16.0.11",
+    "@typescript-eslint/parser": "^4.11.0",
+    "babel-eslint": "^9.0.0",
+    "babel-plugin-import": "^1.13.3",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^4.3.6",
+    "lint-staged": "^7.2.2",
+    "umi": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=10.14.0"
+  }
+}

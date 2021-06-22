@@ -1,0 +1,67 @@
+@import '../../styles/global.less';
+
+.@{login-prefix} {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: auto;
+  background-color: #f9fcff;
+
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('https://sl-online-oss.shulidata.com/base_web_component/decoration.png')
+      no-repeat left top / 100%;
+    pointer-events: none;
+  }
+
+  .title {
+    padding: 32px 0 32px 110px;
+    margin-bottom: 0;
+    color: #1890ff;
+    background: url('https://sl-online-oss.shulidata.com/logo.png') no-repeat
+      48px center / 44px 44px;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    margin: -30px auto 0 auto;
+    min-height: 612px;
+    width: 1284px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 1;
+    width: 449px;
+    height: 612px;
+    padding: 56px;
+    margin-top: -26px;
+    border-radius: 10px;
+    background-color: #389eff;
+    color: #fff;
+    box-shadow: rgba(8, 78, 143, 0.17) 0 2px 20px 0;
+
+    > * {
+      flex-shrink: 0;
+    }
+  }
+
+  input::placeholder {
+    color: #ffffff !important;
+    font-size: 16px;
+  }
+}
