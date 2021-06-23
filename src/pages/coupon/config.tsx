@@ -8,14 +8,15 @@ import styles from './index.less';
  * @Author: jweboy
  * @Date: 2021-06-12 11:09:42
  * @LastEditors: jweboy
- * @LastEditTime: 2021-06-23 00:02:59
+ * @LastEditTime: 2021-06-24 00:53:08
  */
 export const columns: ColumnProps<ICoupon>[] = [
   {
     dataIndex: 'id',
     title: 'id',
     width: 80,
-    sorter: true
+    sorter: true,
+    defaultSortOrder: 'descend'
   },
   {
     dataIndex: 'image',

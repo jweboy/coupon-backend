@@ -2,7 +2,7 @@
  * @Author: jweboy
  * @Date: 2021-06-12 11:08:48
  * @LastEditors: jweboy
- * @LastEditTime: 2021-06-23 00:12:42
+ * @LastEditTime: 2021-06-24 00:54:24
  */
 import { getCoupons, postCouponDelete } from '@/service/coupon'
 import { PlusOutlined } from '@ant-design/icons'
@@ -19,6 +19,7 @@ import { useCallback } from 'react'
 
 const Coupon = () => {
   const [query, setQuery] = useState({
+    order: 'desc'
     // pageNo: 1,
     // pageSize: 1
   })
